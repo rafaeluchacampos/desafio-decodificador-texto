@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
-    --cor-primaria: #D8DFE8;
+    --cor-primaria: #F3F5FC;
     --cor-secundaria: #00008B;
-    --cor-terciaria: #9B9797;
+    --cor-terciaria: #D8DFE8;
     --cor-destaque: #000000;
     --cor-campo: #ffffff;
 
@@ -39,6 +39,7 @@ body {
     font-family: var(--font-primaria);
     font-size: 2rem;
     color: var(--cor-secundaria);
+    padding: 0% 0% 80% 0%;
 }
 
 textarea {
@@ -49,4 +50,42 @@ textarea {
     width: 648px;
     height: 48px;
     border: none;
+    resize: none;
+}
+
+.apresentacao__codificador__botoes {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.botao_criptografar {
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 1rem;
+    padding: 16px 24px;
+    width: 50%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-campo);
+    font-family: var(--font-primaria);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.botao_descriptografar {
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 1rem;
+    padding: 16px 24px;
+    width: 50%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
 }
