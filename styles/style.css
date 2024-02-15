@@ -89,3 +89,55 @@ textarea {
     font-weight: 200;
     text-decoration: none;
 }
+
+.apresentacao__decodificador {
+    background-color: var(--cor-campo);
+    border-radius: 1rem;
+    /* padding: 5% 5% 25%; */
+    width: 400px;
+
+}
+
+.apresentacao__decodificador__imagem {
+    padding: 243px 32px 32px 32px;
+}
+
+.apresentacao__decodificador__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.apresentacao__decodificador__mensagem {
+    display: flex;
+    align-content: center;
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-destaque);
+    padding: 0 1.5rem 1rem 2rem;
+}
+
+.apresentacao__decodificador__texto {
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cor-destaque);
+    padding: 0 1.5rem 0 2rem;
+}
+
+.botao__copiar {
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 1rem;
+    padding: 16px 24px;
+    width: 50%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-campo);
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+}
