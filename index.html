@@ -9,33 +9,36 @@
 
 <body>
     <header>
-        <img src="/assets/Frame 6.png" alt="alura">
+        <img src="./assets/Frame 6.png" alt="alura">
     </header>
 
     <main class="apresentacao">
         <section class="apresentacao__codificador">
             <div class="apresentacao__codificador__texto">
-                <textarea name="texto__decodificar" placeholder="Digite seu texto"></textarea>
+                <textarea name="texto__decodificar" id="texto__original" placeholder="Digite seu texto"></textarea>
             </div>
-            <img src="/assets/Frame 1.png" alt="apenas letras minúsculas e sem acento">
+            <img src="./assets/Frame 1.png" alt="apenas letras minúsculas e sem acento">
             <div class="apresentacao__codificador__botoes">
-                <button onclick="" class="botao_criptografar">Criptografar</button>
+                <button onclick="botaoCriptografar()" class="botao_criptografar">Criptografar</button>
                 <button onclick="" class="botao_descriptografar">Descriptografar</button>
             </div>
         </section>
         <section class="apresentacao__decodificador">
-            <img class="apresentacao__decodificador__imagem" src="/assets/High quality products 1 1.png">
+            <p id="novoTexto" class="apresentacao__decodificador__texto"></p>
+            <img class="apresentacao__decodificador__imagem" src="./assets/High quality products 1 1.png" id="image1">
             <div class="apresentacao__decodificador__box">
-                <p class="apresentacao__decodificador__mensagem"><strong>Nenhuma mensagem encontrada.</strong></p>
-                <p class="apresentacao__decodificador__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p class="apresentacao__decodificador__mensagem" id="text1"><strong>Nenhuma mensagem encontrada.</strong></p>
+                <p class="apresentacao__decodificador__texto" id="text2">Digite um texto que você deseja criptografar ou descriptografar.</p>
                 <button onclick="" class="botao__copiar" disabled>Copiar</button>
              </div>
         </section>
     </main>
     
-    <footer>
+    <footer class="rodape">
         <p>Desenvolvido por Rafael Ucha Campos</p>
     </footer>
+
+    <script src="app.js" defer></script>
 </body>
 
 </html>
