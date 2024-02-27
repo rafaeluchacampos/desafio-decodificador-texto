@@ -4,8 +4,9 @@
     --cor-primaria: #F3F5FC;
     --cor-secundaria: #00008B;
     --cor-terciaria: #D8DFE8;
-    --cor-destaque: #000000;
+    --cor-destaque: #495057;
     --cor-campo: #ffffff;
+    --cor-hover: #272727;
 
     --font-primaria: "Inter", sans-serif;
 }
@@ -94,7 +95,6 @@ textarea {
 .apresentacao__decodificador {
     background-color: var(--cor-campo);
     border-radius: 1rem;
-    /* padding: 5% 5% 25%; */
     width: 400px;
 
 }
@@ -103,13 +103,15 @@ textarea {
     padding: 243px 32px 32px 32px;
 }
 
-.apresentacao__decodificador__texto {
+.apresentacao__decodificador__textoDecodificado {
     background-color: var(--cor-campo);
     color: var(--cor-destaque);
     font-family: var(--font-primaria);
     font-size: 1.5rem;
     font-weight: 200;
-    padding: auto;
+    padding: 2rem 2rem 2rem 2rem;
+    /* width: 336px;
+    height: 781px; */
 }
 
 .apresentacao__decodificador__box {
@@ -151,11 +153,7 @@ textarea {
     font-size: 16px;
     font-weight: 200;
     text-decoration: none;
-    visibility: hidden;
 }
-
-
-
 
 
 

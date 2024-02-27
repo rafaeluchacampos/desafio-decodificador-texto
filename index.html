@@ -20,16 +20,16 @@
             <img src="./assets/Frame 1.png" alt="apenas letras minúsculas e sem acento">
             <div class="apresentacao__codificador__botoes">
                 <button onclick="botaoCriptografar()" class="botao_criptografar">Criptografar</button>
-                <button onclick="" class="botao_descriptografar">Descriptografar</button>
+                <button onclick="botaoDescriptografar()" class="botao_descriptografar">Descriptografar</button>
             </div>
         </section>
         <section class="apresentacao__decodificador">
-            <p id="novoTexto" class="apresentacao__decodificador__texto"></p>
+            <p id="novoTexto" class="apresentacao__decodificador__textoDecodificado"></p>
             <img class="apresentacao__decodificador__imagem" src="./assets/High quality products 1 1.png" id="image1">
             <div class="apresentacao__decodificador__box">
                 <p class="apresentacao__decodificador__mensagem" id="text1"><strong>Nenhuma mensagem encontrada.</strong></p>
                 <p class="apresentacao__decodificador__texto" id="text2">Digite um texto que você deseja criptografar ou descriptografar.</p>
-                <button onclick="" class="botao__copiar" disabled>Copiar</button>
+                <button onclick="copiar()" class="botao__copiar" id="botao__decopiar" style="visibility: hidden;">Copiar</button>
              </div>
         </section>
     </main>
