@@ -18,10 +18,11 @@ function botaoCriptografar() {
         elementHide("image1");
         elementHide("text1");
         elementHide("text2");
+        document.getElementById("novoTexto").style.display = "block";
         mensagemModificada = criptografar(mensagemUsuario);
         mensagemNovo("novoTexto", mensagemModificada);
         document.getElementById("texto__original").value = "";
-        document.getElementById("botao__decopiar").style.visibility = "visible";
+        document.getElementById("botao__decopiar").style.display = "block";
     }
 }
 

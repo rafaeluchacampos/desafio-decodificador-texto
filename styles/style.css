@@ -96,7 +96,9 @@ textarea {
     background-color: var(--cor-campo);
     border-radius: 1rem;
     width: 400px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .apresentacao__decodificador__imagem {
@@ -109,9 +111,8 @@ textarea {
     font-family: var(--font-primaria);
     font-size: 1.5rem;
     font-weight: 200;
-    padding: 2rem 2rem 2rem 2rem;
-    /* width: 336px;
-    height: 781px; */
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 1rem;
 }
 
 .apresentacao__decodificador__box {
@@ -155,12 +156,19 @@ textarea {
     text-decoration: none;
 }
 
+.botao_criptografar:hover {
+    background-color: var(--cor-hover);
+}
 
+.botao_descriptografar:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-campo);
+}
 
-
-
-
-
+.botao__copiar:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-campo);
+}
 
 .rodape {
     background-color: var(--cor-primaria);
@@ -170,4 +178,83 @@ textarea {
     font-weight: 100;
     bottom: 0%;
     width: 100%;
+}
+
+@media (max-width: 1200px) {
+    
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 80px;
+        padding-bottom: 100px;
+    }
+
+    .apresentacao__codificador {
+        padding: auto;
+        margin: 0 auto; /* Nova propriedade */
+    }
+
+    .botao_criptografar {
+        border: 2px solid var(--cor-secundaria);
+        border-radius: 1rem;
+        padding: 16px 24px;
+        width: 50%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        background-color: var(--cor-secundaria);
+        color: var(--cor-campo);
+        font-family: var(--font-primaria);
+        font-size: 16px;
+        font-weight: 200;
+        text-decoration: none;
+    }
+
+    .apresentacao__decodificador {
+        width: 688px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apresentacao__decodificador__imagem {
+        display: none;
+    }
+
+    .apresentacao__decodificador__box {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .apresentacao__codificador__texto {
+        padding: 0% 0% 50% 0%;
+    }
+    
+    
+    .apresentacao__codificador__botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .apresentacao__decodificador {
+        background-color: var(--cor-campo);
+        border-radius: 1rem;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .apresentacao__decodificador__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 32px 32px 32px;
+    }
 }
